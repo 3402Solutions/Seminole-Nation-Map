@@ -78,10 +78,10 @@
         });
         layer_OpenStreetMap_0;
         map.addLayer(layer_OpenStreetMap_0);
-        //function pop_SeminoleNation_1(feature, layer) {
+        function pop_SeminoleNation_1(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                       <td colspan="2">' + (feature.properties['objectid'] !== null ? autolinker.link(feature.properties['objectid'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['objectid'] !== null ? autolinker.link(feature.properties['objectid'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['acreage'] !== null ? autolinker.link(feature.properties['acreage'].toLocaleString()) : '') + '</td>\
